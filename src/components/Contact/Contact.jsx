@@ -267,9 +267,9 @@ export const Contact = () => {
             <CardTitle>LOCALIZAÇÃO</CardTitle>
             <CardText>Nos encontre aqui:</CardText>
             <CardValue>
-              Rua dos Pixels, 404<br />
-              Bairro Arcade<br />
-              São Paulo - SP
+              R. Dr. Monteiro César - 168<br />
+              Centro<br />
+              Pindamonhangaba - SP
             </CardValue>
           </InfoCard>
 
@@ -277,8 +277,7 @@ export const Contact = () => {
             <CardIcon>🕐</CardIcon>
             <CardTitle>HORÁRIO</CardTitle>
             <CardText>Quando estamos online:</CardText>
-            <CardValue>Seg–Sex: 11h–23h</CardValue>
-            <CardValue>Sáb–Dom: 11h–00h</CardValue>
+            <CardValue>Terça a Domingos - 18h ás 23h30</CardValue>
             <OnlineIndicator>ABERTO AGORA</OnlineIndicator>
           </InfoCard>
 
@@ -286,7 +285,7 @@ export const Contact = () => {
             <CardIcon>📲</CardIcon>
             <CardTitle>WHATSAPP</CardTitle>
             <CardText>Pedidos e dúvidas:</CardText>
-            <CardValue>(11) 90000-0000</CardValue>
+            <CardValue>(12) 99137-5580</CardValue>
             <CardText>Resposta em minutos!</CardText>
           </InfoCard>
 
@@ -302,7 +301,7 @@ export const Contact = () => {
         <MainCTA>
           <CTATitle>PRONTO PARA PEDIR?<Cursor>_</Cursor></CTATitle>
           <CTASubtitle>ENVIE SUA MENSAGEM DIRETO NO WHATSAPP!</CTASubtitle>
-          <WhatsAppBtn href="https://wa.me/5500000000000" target="_blank">
+          <WhatsAppBtn href="https://wa.me/5512991375580" target="_blank">
             <span className="icon">📱</span>
             FALAR NO WHATSAPP
           </WhatsAppBtn>

@@ -175,17 +175,16 @@ export const Footer = () => {
         <Col>
           <ColTitle>CONTATO</ColTitle>
           <ColList>
-            <ColItem>WhatsApp: (11) 90000-0000</ColItem>
-            <ColItem>Seg–Sex: 11h–23h</ColItem>
-            <ColItem>Sáb–Dom: 11h–00h</ColItem>
-            <ColItem>Rua dos Pixels, 404</ColItem>
+            <ColItem>WhatsApp: (12) 99137-5580</ColItem>
+            <ColItem>Terça a Domingos - 18h ás 23h30</ColItem>
+            <ColItem>Rua Dr. Monteiro César - 168</ColItem>
           </ColList>
         </Col>
       </Inner>
 
       <Bottom>
         <BottomText>
-          © 2024 PLAY BURGUER — TODOS OS DIREITOS RESERVADOS — CNPJ: 00.000.000/0001-00
+          © 2026 PLAY BURGUER — TODOS OS DIREITOS RESERVADOS — CNPJ: 44.174.711/0001-58
         </BottomText>
         <MarqueeWrap>
           <MarqueeInner>
