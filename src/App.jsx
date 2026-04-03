@@ -64,12 +64,7 @@ function AppContent() {
       <Footer />
       <CartButton />
       <CartSidebar />
-      {usingMockData && (
-        <MockBanner>
-          <span>⚠</span>
-          MODO DEMO — Configure o Firebase em src/firebase/config.js
-        </MockBanner>
-      )}
+      
     </>
   );
 }
