@@ -2,6 +2,7 @@
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { theme } from './styles/theme';
+import { CartProvider } from './context/CartContext';
 import { useMenu } from './hooks/useMenu';
 import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
@@ -9,6 +10,7 @@ import { Highlights } from './components/Highlights/Highlights';
 import { Menu } from './components/Menu/Menu';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
+import { CartButton, CartSidebar } from './components/Cart/Cart';
 import styled, { keyframes } from 'styled-components';
 
 const blink = keyframes`
@@ -47,24 +49,38 @@ const MockBanner = styled.div`
   }
 `;
 
-function App() {
+function AppContent() {
   const { menuItems, highlights, categories, loading, usingMockData } = useMenu();
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
+    <>
       <Header />
       <main>
         <Hero />
         <Highlights items={highlights} />
-        <Menu
-          menuItems={menuItems}
-          categories={categories}
-          loading={loading}
-        />
+        <Menu menuItems={menuItems} categories={categories} loading={loading} />
         <Contact />
       </main>
       <Footer />
+      <CartButton />
+      <CartSidebar />
+      {usingMockData && (
+        <MockBanner>
+          <span>⚠</span>
+          MODO DEMO — Configure o Firebase em src/firebase/config.js
+        </MockBanner>
+      )}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <CartProvider>
+        <AppContent />
+      </CartProvider>
     </ThemeProvider>
   );
 }

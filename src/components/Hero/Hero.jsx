@@ -369,7 +369,7 @@ export const Hero = () => {
             Os melhores smash burgers artesanais da cidade, feitos com ingredientes selecionados e muito amor. Level up no sabor!
           </Subtitle>
           <ButtonGroup>
-            <PrimaryBtn href="https://wa.me/5500000000000" target="_blank">
+            <PrimaryBtn href="https://wa.me/5512991375580" target="_blank">
               📲 PEDIR NO WHATSAPP
             </PrimaryBtn>
             <SecondaryBtn onClick={() => scrollTo('menu')}>
@@ -378,8 +378,8 @@ export const Hero = () => {
           </ButtonGroup>
           <Stats>
             <StatItem>
-              <StatNum>+50</StatNum>
-              <StatLabel>BURGERS</StatLabel>
+              <StatNum>+430</StatNum>
+              <StatLabel>AVALIAÇÕES</StatLabel>
             </StatItem>
             <StatItem>
               <StatNum>5★</StatNum>

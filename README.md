@@ -98,7 +98,7 @@ Na collection `menu`, crie documentos com esta estrutura:
 ### 4. Configurar WhatsApp
 Em `src/hooks/useMenu.js` e nos componentes, substitua:
 ```js
-const phone = '5500000000000';
+const phone = '5512991375580';
 // por:
 const phone = '55' + 'DDD' + 'NUMERO'; // ex: '5511999990000'
 ```
@@ -129,7 +129,7 @@ colors: {
 ```
 
 ### Dados do restaurante
-Pesquise por `5500000000000` e substitua pelo número real de WhatsApp.
+Pesquise por `5512991375580` e substitua pelo número real de WhatsApp.
 Pesquise por `Rua dos Pixels, 404` para alterar o endereço.
 Pesquise por `(11) 90000-0000` para alterar o telefone.
 

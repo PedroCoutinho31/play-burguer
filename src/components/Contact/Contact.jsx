@@ -277,7 +277,8 @@ export const Contact = () => {
             <CardIcon>🕐</CardIcon>
             <CardTitle>HORÁRIO</CardTitle>
             <CardText>Quando estamos online:</CardText>
-            <CardValue>Terça a Domingos - 18h ás 23h30</CardValue>
+            <CardValue>Terça a Domingos - 18:15h ás 23h30</CardValue>
+            <CardValue>CEP: 12400-260</CardValue>
             <OnlineIndicator>ABERTO AGORA</OnlineIndicator>
           </InfoCard>
 

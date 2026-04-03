@@ -226,7 +226,7 @@ export const Header = () => {
           <NavLink onClick={() => scrollTo('contact')}>✉ CONTATO</NavLink>
         </Nav>
 
-        <CTAButton href="https://wa.me/5500000000000" target="_blank">
+        <CTAButton href="https://wa.me/5512991375580" target="_blank">
           📲 PEDIR AGORA
         </CTAButton>
 
@@ -240,7 +240,7 @@ export const Header = () => {
         <MobileNavLink onClick={() => scrollTo('highlights')}>★ DESTAQUES</MobileNavLink>
         <MobileNavLink onClick={() => scrollTo('menu')}>☰ CARDÁPIO COMPLETO</MobileNavLink>
         <MobileNavLink onClick={() => scrollTo('contact')}>✉ CONTATO</MobileNavLink>
-        <MobileNavLink href="https://wa.me/5500000000000" target="_blank">
+        <MobileNavLink href="https://wa.me/5512991375580" target="_blank">
           📲 PEDIR AGORA VIA WHATSAPP
         </MobileNavLink>
       </MobileMenu>

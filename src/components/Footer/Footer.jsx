@@ -158,7 +158,7 @@ export const Footer = () => {
         <Brand>
           <BrandName>🍔 PLAY BURGUER</BrandName>
           <BrandDesc>
-            Os melhores smash burgers artesanais da cidade. Feitos com ingredientes premium, muito sabor e estilo arcade.
+            Os melhores hambúrgueres artesanais da cidade🍔👌 Chega de comer a mesma coisa sempre! Somos diferentes😎 Inspirado em jogos que fizeram sua infância e juventude mais feliz  Nostalgia + Sabor = PlayBurguer
           </BrandDesc>
         </Brand>
 
@@ -176,15 +176,16 @@ export const Footer = () => {
           <ColTitle>CONTATO</ColTitle>
           <ColList>
             <ColItem>WhatsApp: (12) 99137-5580</ColItem>
-            <ColItem>Terça a Domingos - 18h ás 23h30</ColItem>
+            <ColItem>Terça a Domingos - 18:15h ás 23h30</ColItem>
             <ColItem>Rua Dr. Monteiro César - 168</ColItem>
+            <ColItem>CEP: 12400-260</ColItem>
           </ColList>
         </Col>
       </Inner>
 
       <Bottom>
         <BottomText>
-          © 2026 PLAY BURGUER — TODOS OS DIREITOS RESERVADOS — CNPJ: 44.174.711/0001-58
+          © 2026 PLAY BURGUER — TODOS OS DIREITOS RESERVADOS — CNPJ: 42.533.917/0001-00
         </BottomText>
         <MarqueeWrap>
           <MarqueeInner>
