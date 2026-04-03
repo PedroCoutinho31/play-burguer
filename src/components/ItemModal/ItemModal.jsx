@@ -355,6 +355,8 @@ const formatPrice = (price) =>
 // ── Component ────────────────────────────────────────────────
 export const ItemModal = ({ item, onClose }) => {
   const { addItem } = useCart();
+  const CATEGORIES_WITH_BREAD = ['burgers', 'smash'];
+  const hasBread = CATEGORIES_WITH_BREAD.includes(item.category);
   const [selectedBread, setSelectedBread] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [showError, setShowError] = useState(false);
@@ -373,12 +375,12 @@ export const ItemModal = ({ item, onClose }) => {
   }, []);
 
   const handleAdd = () => {
-    if (!selectedBread) {
+    if (hasBread && !selectedBread) {
       setShowError(true);
       setTimeout(() => setShowError(false), 2000);
       return;
     }
-    addItem(item, selectedBread, quantity);
+    addItem(item, hasBread ? selectedBread : { id: 'none', name: '—', color: '#555' }, quantity);
     onClose();
   };
 
@@ -404,39 +406,44 @@ export const ItemModal = ({ item, onClose }) => {
           <Divider />
 
           {/* ── Bread selection ── */}
+          {hasBread && (
+  <>
+          {/* Se você tiver um componente <Divider /> ou similar, coloque-o aqui */}
           <SectionLabel>
-            ESCOLHA O PÃO <span className="req">OBRIGATÓRIO</span>
+             ESCOLHA O PÃO <span className="req">OBRIGATÓRIO</span>
           </SectionLabel>
           <SectionSub>Selecione 1 opção para continuar</SectionSub>
-
+                
           <BreadGrid>
             {BREADS.map(bread => (
               <BreadCard
-                key={bread.id}
+               key={bread.id}
                 $selected={selectedBread?.id === bread.id}
                 $color={bread.color}
                 onClick={() => { setSelectedBread(bread); setShowError(false); }}
               >
-                <BreadImg>
+               <BreadImg>
                   {bread.imageUrl
                     ? <img src={bread.imageUrl} alt={bread.name} />
                     : bread.emoji
                   }
-                </BreadImg>
-                <BreadName>{bread.name}</BreadName>
+               </BreadImg>
+               <BreadName>{bread.name}</BreadName>
                 {selectedBread?.id === bread.id && (
                   <CheckMark $color={bread.color}>✓</CheckMark>
                 )}
               </BreadCard>
             ))}
           </BreadGrid>
-
+          
           {showError && (
-            <ErrorHint key={Date.now()}>
+           <ErrorHint key={Date.now()}>
               ⚠ SELECIONE UM PÃO PARA CONTINUAR
-            </ErrorHint>
+           </ErrorHint>
           )}
-
+        </>
+      )}
+ 
           <Divider />
 
           {/* ── Quantity ── */}
