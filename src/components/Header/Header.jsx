@@ -215,7 +215,7 @@ export const Header = () => {
       <TopBar />
       <Inner>
         <LogoArea onClick={() => scrollTo('home')}>
-          <PixelBurger>🍔</PixelBurger>
+          <img src="/logotransparente.png" alt="Play Burguer" style={{ height: '44px', width: 'auto', objectFit: 'contain' }} />
           <LogoText>PLAY BURGUER</LogoText>
         </LogoArea>
 

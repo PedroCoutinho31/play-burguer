@@ -1,6 +1,6 @@
 // src/components/Hero/Hero.jsx
 import styled, { keyframes } from 'styled-components';
-
+import logoImg from '/logotransparente.png';
 const fadeInUp = keyframes`
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }
@@ -292,12 +292,12 @@ const BurgerPanel = styled.div`
   &::before { top: 8px; left: 8px; box-shadow: calc(100% + 340px) 0 0 #FFD700, 0 calc(100% + 340px) 0 #FFD700, calc(100% + 340px) calc(100% + 340px) 0 #FFD700; }
 `;
 
-const BurgerEmoji = styled.div`
-  font-size: clamp(100px, 15vw, 160px);
+const BurgerEmoji = styled.img`
+  width: clamp(140px, 18vw, 200px);
+  height: auto;
   animation: ${floatBurger} 3s ease-in-out infinite;
   filter: drop-shadow(0 0 20px rgba(255,215,0,0.4)) drop-shadow(0 10px 20px rgba(0,0,0,0.8));
   user-select: none;
-  image-rendering: pixelated;
 `;
 
 const PixelBadge = styled.div`
@@ -394,7 +394,7 @@ export const Hero = () => {
 
         <VisualSide>
           <BurgerPanel>
-            <BurgerEmoji role="img" aria-label="Burger pixel art">🍔</BurgerEmoji>
+            <BurgerEmoji as="img" src={logoImg} alt="Play Burguer logo" role="img" />
             <PixelBadge>NEW!</PixelBadge>
           </BurgerPanel>
           <InsertCoin>— INSERT COIN —</InsertCoin>
