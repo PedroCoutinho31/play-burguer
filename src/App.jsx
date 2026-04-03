@@ -65,12 +65,6 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      {usingMockData && (
-        <MockBanner>
-          <span>⚠</span>
-          MODO DEMO — Configure o Firebase em src/firebase/config.js
-        </MockBanner>
-      )}
     </ThemeProvider>
   );
 }
